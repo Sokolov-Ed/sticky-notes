@@ -2,7 +2,7 @@ let close = document.getElementById("close");
 let create = document.getElementById("create");
 let add = document.getElementById("add");
 let text = document.getElementById("text");
-let createNoteField = document.getElementsByClassName("createNoteField")[0];
+let createNoteField = document.getElementsByClassName("create_note_field")[0];
 let content = document.getElementsByClassName("content")[0];
 let backgroundColor = ["greenyellow", "magenta", "royalblue", "skyblue", "crimson", "red", "tomato", "gold", "yellowgreen"];
 let tiltAngle = [0, 2.5, -2.5, 5, -5, 7.5, -7.5, 10, -10];
@@ -18,11 +18,11 @@ function getTiltAngle() {
 }
 
 add.addEventListener('click', e => {
-	createNoteField.classList.add("createNoteFieldOpened");
+	createNoteField.classList.add("create_note_field_opened");
 })
 
 close.addEventListener('click', e => {
-	createNoteField.classList.remove("createNoteFieldOpened");
+	createNoteField.classList.remove("create_note_field_opened");
 })
 
 create.addEventListener('click', e => {
